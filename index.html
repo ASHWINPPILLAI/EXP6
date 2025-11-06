@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop Order</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CAKE SHOP</h1>
+
+        <div class="cake-display">
+            <div class="cake-item">
+                <img src="https://preppykitchen.com/wp-content/uploads/2023/06/Rainbow-Cake-Feature.jpg" alt="Rainbow Cake">
+                <p>Rainbow Cake - Rs. 300</p>
+            </div>
+            <div class="cake-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKQxw5DJvhhpkBCpmKZUk_zL2bx3GFlmeBqQ&s" alt="Chocolate Cake">
+                <p>Chocolate Cake - Rs. 200</p>
+            </div>
+            <div class="cake-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXqafW63fP1wqJShG8GxeN9FKD623k0iES1Q&s" alt="Red Velvet Cake">
+                <p>Red Velvet Cake - Rs. 250</p>
+            </div>
+            <div class="cake-item">
+                <img src="https://bakerbynature.com/wp-content/uploads/2021/06/Mile-High-Black-Forest-Cake-4-1-of-1.jpg" alt="Black Forest Cake">
+                <p>Black Forest Cake - Rs. 350</p>
+            </div>
+        </div>
+
+        <h2 class="order-heading">Order Cake</h2>
+
+        <div class="order-form">
+            <div class="form-group">
+                <label for="rainbowQuantity">Rainbow Cake (Quantity)</label>
+                <input type="number" id="rainbowQuantity" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="chocolateQuantity">Chocolate Cake (Quantity)</label>
+                <input type="number" id="chocolateQuantity" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="redVelvetQuantity">Red Velvet Cake (Quantity)</label>
+                <input type="number" id="redVelvetQuantity" value="0" min="0">
+            </div>
+            <div class="form-group">
+                <label for="blackForestQuantity">Black Forest Cake (Quantity)</label>
+                <input type="number" id="blackForestQuantity" value="0" min="0">
+            </div>
+
+            <button onclick="calculateBill()">Place Order</button>
+
+            <div class="bill-output">
+                <h3>Purchase Order Bill!!</h3>
+                <p>Total Price: <span id="totalPrice">Rs. 0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
